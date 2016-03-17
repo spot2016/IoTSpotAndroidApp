@@ -191,7 +191,7 @@ public class MainActivity extends AppCompatActivity
     private void compartirApp()
     {
         Toast.makeText(getApplicationContext(), "Share the app with your friends!", Toast.LENGTH_SHORT).show();
-        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com/roberto.fierroszepeda"));
+        Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.facebook.com"));
         startActivity(browserIntent);
     }
 
@@ -230,7 +230,7 @@ public class MainActivity extends AppCompatActivity
                         Toast.makeText(getApplicationContext(), "Spot found!", Toast.LENGTH_LONG).show();
                         showProgress(false);
                         park.setVisibility(View.VISIBLE);
-                        etiqueta.setText("Our suggestion is for you to go to " + dataSnapshot.getValue());
+                        etiqueta.setText("Go to " + dataSnapshot.getValue());
                     }
                 }catch (NullPointerException e){
                     park.setVisibility(View.GONE);

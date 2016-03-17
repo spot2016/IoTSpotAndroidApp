@@ -34,48 +34,34 @@ public class Schedule extends AppCompatActivity {
 
     public void createSpinners() {
         spinner = (Spinner) findViewById(R.id.spinnerMonday);
-        // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
                 R.array.sections1, R.layout.spinner_item);
-        // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
         spinner.setAdapter(adapter);
 
         spinner2 = (Spinner) findViewById(R.id.spinnerTuesday);
-        // Create an ArrayAdapter using the string array and a default spinner layout
+
         ArrayAdapter<CharSequence> adapter2 = ArrayAdapter.createFromResource(this,
                 R.array.sections1, R.layout.spinner_item);
-        // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
         spinner2.setAdapter(adapter2);
 
         spinner3 = (Spinner) findViewById(R.id.spinnerWednesday);
-        // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter3 = ArrayAdapter.createFromResource(this,
                 R.array.sections1, R.layout.spinner_item);
-        // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
         spinner3.setAdapter(adapter3);
 
         spinner4 = (Spinner) findViewById(R.id.spinnerThursday);
-        // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter4 = ArrayAdapter.createFromResource(this,
                 R.array.sections1, R.layout.spinner_item);
-        // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
         spinner4.setAdapter(adapter4);
 
         spinner5 = (Spinner) findViewById(R.id.spinnerFriday);
-        // Create an ArrayAdapter using the string array and a default spinner layout
         ArrayAdapter<CharSequence> adapter5 = ArrayAdapter.createFromResource(this,
                 R.array.sections1, R.layout.spinner_item);
-        // Specify the layout to use when the list of choices appears
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
-        // Apply the adapter to the spinner
         spinner5.setAdapter(adapter5);
     }
 
