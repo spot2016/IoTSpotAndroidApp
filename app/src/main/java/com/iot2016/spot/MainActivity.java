@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity
                         .setAction("Action", null).show();
 
                 db.child("/jobs/" + Email.substring(0, Email.lastIndexOf("@"))).setValue("true");
-
+                fab.setVisibility(View.GONE);
                 showProgress(true);
                 searchSpot();
             }
@@ -225,11 +225,12 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 try {
                     String aux = dataSnapshot.getValue().toString();
-                    if (dataSnapshot.getValue() != true) {
+                    System.out.print(aux);
+                    if (aux != "true") {
+                        Toast.makeText(getApplicationContext(), "Spot found!", Toast.LENGTH_LONG).show();
                         showProgress(false);
                         park.setVisibility(View.VISIBLE);
-                        fab.setVisibility(View.GONE);
-                        etiqueta.setText("Our suggestion is for you to go " + dataSnapshot.getValue());
+                        etiqueta.setText("Our suggestion is for you to go to " + dataSnapshot.getValue());
                     }
                 }catch (NullPointerException e){
                     park.setVisibility(View.GONE);
