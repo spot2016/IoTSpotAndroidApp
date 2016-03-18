@@ -64,6 +64,7 @@ public class MainActivity extends AppCompatActivity
         mHomeView = findViewById(R.id.search_screen);
         mProgressView = findViewById(R.id.search_progress);
 
+
         fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,8 +78,6 @@ public class MainActivity extends AppCompatActivity
                 searchSpot();
             }
         });
-
-
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -225,16 +224,21 @@ public class MainActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot) {
                 try {
                     String aux = dataSnapshot.getValue().toString();
-                    System.out.print(aux);
                     if (aux != "true") {
                         Toast.makeText(getApplicationContext(), "Spot found!", Toast.LENGTH_LONG).show();
                         showProgress(false);
                         park.setVisibility(View.VISIBLE);
-                        etiqueta.setText("Go to " + dataSnapshot.getValue());
+                        etiqueta.setTextSize(60);
+                        etiqueta.setX(150);
+                        etiqueta.setY(20);
+                        etiqueta.setText("Go to \n" + dataSnapshot.getValue());
                     }
                 }catch (NullPointerException e){
                     park.setVisibility(View.GONE);
                     fab.setVisibility(View.VISIBLE);
+                    etiqueta.setX(20);
+                    etiqueta.setY(300);
+                    etiqueta.setTextSize(20);
                     etiqueta.setText("Click the button at the bottom to search your spot!");
                 }
             }

@@ -9,7 +9,10 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
 public class Schedule extends AppCompatActivity {
 
@@ -29,6 +32,7 @@ public class Schedule extends AppCompatActivity {
         Intent i = getIntent();
         this.db = new Firebase(getString(R.string.db) + "/usuarios/" + i.getStringExtra("email"));
         createSpinners();
+        dataListen();
     }
 
 
@@ -85,6 +89,44 @@ public class Schedule extends AppCompatActivity {
         setResult(RESULT_OK);
         finish();
 
+    }
+
+    public void dataListen(){
+        Firebase ref = this.db.child("/schedule");
+        ref.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot snapshot) {
+                for (DataSnapshot postSnapshot : snapshot.getChildren()){
+                    if (postSnapshot.getKey().equals("Monday")){
+                        spinner.setSelection(compare((String)postSnapshot.getValue()));
+                    }
+                    else if(postSnapshot.getKey().equals("Tuesday")){
+                        spinner2.setSelection(compare((String)postSnapshot.getValue()));
+                    }
+                    else if(postSnapshot.getKey().equals("Wednesday")){
+                        spinner3.setSelection(compare((String)postSnapshot.getValue()));
+                    }
+                    else if(postSnapshot.getKey().equals("Thursday")){
+                        spinner4.setSelection(compare((String)postSnapshot.getValue()));
+                    }
+                    else {
+                        spinner5.setSelection(compare((String)postSnapshot.getValue()));
+                    }
+                }
+            }
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+                System.out.println("The read failed: " + firebaseError.getMessage());
+            }
+        });
+    }
+
+    public int compare(String data){
+        if (data.equals("W-A1")){
+            return 0;
+        }else{
+            return 1;
+        }
     }
 
     public void Cancel(View v)

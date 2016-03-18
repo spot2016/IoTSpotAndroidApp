@@ -9,6 +9,27 @@
         <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/jackson-annotations-2.2.2_ba60fae4e73834c10dd7bcb08462fa9072107f88.jar" />
     </item>
     <item
+        jar="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
+        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/com.android.support-design-23.1.1_02cf99154d2f3cd3e128ce5862214fad71462201.jar" />
+    </item>
+    <item
+        jar="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
+        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.1.1_891a1e1564ea6bee2c28dc91da520c693177a781.jar" />
+    </item>
+    <item
+        jar="/home/diego/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
+        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/support-annotations-23.1.1_1f3a01d7a213777bcdf5920abd6b340af7b26ab1.jar" />
+    </item>
+    <item
         jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.5.1/8c94ae916de454be497782505e3e6fd437a28b95/firebase-client-android-2.5.1.jar"
         jumboMode="false"
         revision="23.0.2"
@@ -23,39 +44,11 @@
         <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/internal_impl-23.1.1_77afb08236f5919d188404c43bce429c2ed27156.jar" />
     </item>
     <item
-        jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.5.1/11ea7eeda00b1bb92accba250ee7c8740bdebc19/firebase-client-jvm-2.5.1.jar"
+        jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.12/6ec0bbd3e161a73ed672284b587fd32309a86d7a/tubesock-0.0.12.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="11ea7eeda00b1bb92accba250ee7c8740bdebc19">
-        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/firebase-client-jvm-2.5.1_ba7a02d5126ce0768175c29c4fd2c231f1e7ee3e.jar" />
-    </item>
-    <item
-        jar="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
-        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/com.android.support-recyclerview-v7-23.1.1_e6fea676d3173b0dc11251db4d81ccd9fb002d05.jar" />
-    </item>
-    <item
-        jar="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.1.1/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="6cbc7773921fcfedbe55657578f0cbfe614778dc">
-        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/com.android.support-support-v4-23.1.1_891a1e1564ea6bee2c28dc91da520c693177a781.jar" />
-    </item>
-    <item
-        jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
-        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/jackson-databind-2.2.2_ee3b7e5e233db5b9ab37ac769fbfbdb688fd7ab9.jar" />
-    </item>
-    <item
-        jar="/home/diego/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/23.1.1/support-annotations-23.1.1.jar"
-        jumboMode="false"
-        revision="23.0.2"
-        sha1="8d680ba5a623724d1fb0e81c36a790f023a6cede">
-        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/support-annotations-23.1.1_1f3a01d7a213777bcdf5920abd6b340af7b26ab1.jar" />
+        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
+        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/tubesock-0.0.12_8b4dd6d1cc600abed4a0f95143ba46fb26144378.jar" />
     </item>
     <item
         jar="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.1.1/jars/classes.jar"
@@ -65,18 +58,25 @@
         <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/com.android.support-appcompat-v7-23.1.1_c377b10de7d22639342819d310923e226d4fddc0.jar" />
     </item>
     <item
-        jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.12/6ec0bbd3e161a73ed672284b587fd32309a86d7a/tubesock-0.0.12.jar"
+        jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="6ec0bbd3e161a73ed672284b587fd32309a86d7a">
-        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/tubesock-0.0.12_8b4dd6d1cc600abed4a0f95143ba46fb26144378.jar" />
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/jackson-databind-2.2.2_ee3b7e5e233db5b9ab37ac769fbfbdb688fd7ab9.jar" />
     </item>
     <item
-        jar="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/exploded-aar/com.android.support/design/23.1.1/jars/classes.jar"
+        jar="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.1.1/jars/classes.jar"
         jumboMode="false"
         revision="23.0.2"
-        sha1="379471b2bd17d9737c050345c08e8c7d16589784">
-        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/com.android.support-design-23.1.1_02cf99154d2f3cd3e128ce5862214fad71462201.jar" />
+        sha1="09c5e804bc67fc0580360043dff067df574a60d4">
+        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/com.android.support-recyclerview-v7-23.1.1_e6fea676d3173b0dc11251db4d81ccd9fb002d05.jar" />
+    </item>
+    <item
+        jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.5.1/11ea7eeda00b1bb92accba250ee7c8740bdebc19/firebase-client-jvm-2.5.1.jar"
+        jumboMode="false"
+        revision="23.0.2"
+        sha1="11ea7eeda00b1bb92accba250ee7c8740bdebc19">
+        <dex dex="/home/diego/AndroidStudioProjects/IoTSpotAndroidApp/app/build/intermediates/pre-dexed/release/firebase-client-jvm-2.5.1_ba7a02d5126ce0768175c29c4fd2c231f1e7ee3e.jar" />
     </item>
     <item
         jar="/home/diego/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
